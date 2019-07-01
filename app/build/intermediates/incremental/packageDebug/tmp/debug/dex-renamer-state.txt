@@ -1,4 +1,4 @@
-#Mon Jul 01 16:15:54 PDT 2019
+#Mon Jul 01 16:34:28 PDT 2019
 base.0=/Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex
