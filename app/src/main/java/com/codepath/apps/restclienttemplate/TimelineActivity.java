@@ -1,10 +1,15 @@
 package com.codepath.apps.restclienttemplate;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -43,6 +48,50 @@ public class TimelineActivity extends AppCompatActivity {
 
         populateTimeline();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_timeline, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.miCompose:
+                composeMessage();
+                return true;
+//            case R.id.miProfile:
+//                showProfileView();
+//                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if(requestCode == 100 && resultCode == RESULT_OK){
+
+            Tweet resultTweet = data.getParcelableExtra("result_tweet");
+            tweets.add(0,resultTweet);
+            tweetAdapter.notifyItemInserted(0);
+            rvTweets.scrollToPosition(0);
+            Toast.makeText(this, "Tweeted", Toast.LENGTH_LONG);
+
+        }
+    }
+
+    private void composeMessage() {
+        //open composeActivity to make new tweet
+        Intent composeTweet = new Intent(TimelineActivity.this, ComposeActivity.class);
+        startActivityForResult(composeTweet, 100);
+        
+    }
+
 
     private void populateTimeline(){
         client.getHomeTimeline(new JsonHttpResponseHandler(){

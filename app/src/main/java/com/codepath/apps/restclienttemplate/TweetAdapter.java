@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import java.util.List;
@@ -49,10 +50,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         viewHolder.tvBody.setText(tweet.body);
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
+                .apply(RequestOptions.circleCropTransform())
                 .into(viewHolder.ivProfileImage);
-
-
-
     }
 
     @Override
