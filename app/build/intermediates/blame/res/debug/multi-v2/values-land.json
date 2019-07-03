@@ -4,6 +4,25 @@
             "outputFile": "/Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
+                    "source": "/Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/2375c97e4815f642b017d94e551d94fb/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
+                    }
+                },
+                {
                     "source": "/Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/40b461f82202959b9d7a42e19fca46bb/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",

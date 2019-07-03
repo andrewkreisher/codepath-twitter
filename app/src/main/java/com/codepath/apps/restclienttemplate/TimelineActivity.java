@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -26,6 +27,8 @@ import cz.msebera.android.httpclient.Header;
 
 public class TimelineActivity extends AppCompatActivity {
 
+    private SwipeRefreshLayout swipeContainer;
+
     RestClient client;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
@@ -40,11 +43,27 @@ public class TimelineActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_timeline);
 
-        client = RestApplication.getRestClient(this);
+        swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
 
+        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                // Your code to refresh the list here.
+                // Make sure you call swipeContainer.setRefreshing(false)
+                // once the network request has completed successfully.
+                fetchTimelineAsync(0);
+            }
+
+//            swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
+//            android.R.color.holo_green_light,
+//            android.R.color.holo_orange_light,
+//            android.R.color.holo_red_light);
+
+        });
+        client = RestApplication.getRestClient(this);
         //find recyclerview
         rvTweets = (RecyclerView) findViewById(R.id.rvTweet);
-
+        client = RestApplication.getRestClient(this);
         //init arraylist / data source
         tweets = new ArrayList<>();
         //construct adapter from datasource
@@ -55,6 +74,39 @@ public class TimelineActivity extends AppCompatActivity {
 
         populateTimeline();
     }
+
+
+
+
+    public void fetchTimelineAsync(int page) {
+            // Send the network request to fetch the updated data
+            // `client` here is an instance of Android Async HTTP
+            // getHomeTimeline is an example endpoint.
+
+
+//            tweetAdapter.clear();
+//            populateTimeline();
+//            swipeContainer.setRefreshing(false);
+
+        client.getHomeTimeline(new JsonHttpResponseHandler() {
+            public void onSuccess(int i, Header[] header, JSONArray json) {
+                Log.i("Andrew2", "Success");
+                        // Remember to CLEAR OUT old items before appending in the new ones
+                tweetAdapter.clear();
+                        // ...the data has come back, add new items to your adapter...
+                //weetAdapter.addAll(tweets);
+                populateTimeline();
+                        // Now we call setRefreshing(false) to signal refresh has finished
+                swipeContainer.setRefreshing(false);
+            }
+
+            public void onFailure(Throwable e) {
+                Log.d("Andrew", "Fetch timeline error: " + e.toString());
+            }
+        });}
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

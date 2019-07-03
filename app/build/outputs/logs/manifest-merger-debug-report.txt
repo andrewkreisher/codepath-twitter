@@ -5,18 +5,20 @@ INJECTED from /Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitt
 INJECTED from /Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/AndroidManifest.xml:2:1-41:12
 INJECTED from /Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/AndroidManifest.xml:2:1-41:12
 MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/c5a65df053bd8bf9ae20b6ad6ec9e3b0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/2375c97e4815f642b017d94e551d94fb/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/40b461f82202959b9d7a42e19fca46bb/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/516259e1f4955db2d5c5a79d32758646/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/443da14fdbaae5120c22de5987d9bae8/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/f086555b940a6562ad369af482222ebd/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/af1a2dd644af5cf5b37dd5825db3afaa/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/b5e6b65588376822f5972d6d1c9e2c93/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/cb96290601676437ea31f1610af61533/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/443da14fdbaae5120c22de5987d9bae8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/ad370364624a45c58f5bcb434eb2e0d0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/f2cfe46b12ee6e85d9f41d8437982a34/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/1cd313abf0bd76fe8ad5fb8e26eed85d/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/a975a0bc00460a3beed9dd433932ff1a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/67ea3265be2ed5f81d91fc3465400629/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/7a181b62a8d5c9aa15f02bf2de71ca14/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/ed90641c282306e5f9c4030c91d05ea6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/eb357818d19a6523fb90ef547d83e9f7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/e440b5a3fb16b0b24cf6605013b4de52/AndroidManifest.xml:17:1-22:12
@@ -35,6 +37,7 @@ MERGED from [android.arch.persistence:db:1.1.1] /Users/andrewkreisher/.gradle/ca
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/9198fafa01516dcc1252731a1d5663a7/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/776c5f1abf0c76a045003e578ff6663b/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/a93c01818763061ba7983ad21b2d7200/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/679e39e2d91f31f25c60f0a2c03f55d3/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/43df1812fd88fb05893627b7e9a8b479/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/917bc16a78ee940ed624bf51b87f2c29/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/000a3ca4449f43475bfa67ede4b47d5f/AndroidManifest.xml:17:1-22:12
@@ -68,6 +71,8 @@ ADDED from /Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitter/
 		ADDED from /Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/AndroidManifest.xml:8:22-78
 application
 ADDED from /Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/AndroidManifest.xml:10:5-39:19
+MERGED from [com.android.support:design:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/2375c97e4815f642b017d94e551d94fb/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/2375c97e4815f642b017d94e551d94fb/AndroidManifest.xml:22:5-20
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/516259e1f4955db2d5c5a79d32758646/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/516259e1f4955db2d5c5a79d32758646/AndroidManifest.xml:10:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/af1a2dd644af5cf5b37dd5825db3afaa/AndroidManifest.xml:9:5-20
@@ -146,10 +151,14 @@ INJECTED from /Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitt
 INJECTED from /Users/andrewkreisher/AndroidStudioProjects/Twitter/codepath-twitter/app/src/main/AndroidManifest.xml
 MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/c5a65df053bd8bf9ae20b6ad6ec9e3b0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/c5a65df053bd8bf9ae20b6ad6ec9e3b0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/2375c97e4815f642b017d94e551d94fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/2375c97e4815f642b017d94e551d94fb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/40b461f82202959b9d7a42e19fca46bb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/40b461f82202959b9d7a42e19fca46bb/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/516259e1f4955db2d5c5a79d32758646/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/516259e1f4955db2d5c5a79d32758646/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-v4:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/443da14fdbaae5120c22de5987d9bae8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/443da14fdbaae5120c22de5987d9bae8/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/f086555b940a6562ad369af482222ebd/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/f086555b940a6562ad369af482222ebd/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/af1a2dd644af5cf5b37dd5825db3afaa/AndroidManifest.xml:5:5-7:41
@@ -158,8 +167,6 @@ MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/andrewkreisher/.gradle/cac
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/b5e6b65588376822f5972d6d1c9e2c93/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/cb96290601676437ea31f1610af61533/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/cb96290601676437ea31f1610af61533/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/443da14fdbaae5120c22de5987d9bae8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/443da14fdbaae5120c22de5987d9bae8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/ad370364624a45c58f5bcb434eb2e0d0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/ad370364624a45c58f5bcb434eb2e0d0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/f2cfe46b12ee6e85d9f41d8437982a34/AndroidManifest.xml:20:5-44
@@ -170,6 +177,8 @@ MERGED from [com.android.support:support-core-utils:28.0.0] /Users/andrewkreishe
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/a975a0bc00460a3beed9dd433932ff1a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/67ea3265be2ed5f81d91fc3465400629/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/67ea3265be2ed5f81d91fc3465400629/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/7a181b62a8d5c9aa15f02bf2de71ca14/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/7a181b62a8d5c9aa15f02bf2de71ca14/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/ed90641c282306e5f9c4030c91d05ea6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/ed90641c282306e5f9c4030c91d05ea6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/eb357818d19a6523fb90ef547d83e9f7/AndroidManifest.xml:20:5-44
@@ -206,6 +215,8 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/andrewkreisher/.
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/776c5f1abf0c76a045003e578ff6663b/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/a93c01818763061ba7983ad21b2d7200/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/a93c01818763061ba7983ad21b2d7200/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/679e39e2d91f31f25c60f0a2c03f55d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/679e39e2d91f31f25c60f0a2c03f55d3/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/43df1812fd88fb05893627b7e9a8b479/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/43df1812fd88fb05893627b7e9a8b479/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /Users/andrewkreisher/.gradle/caches/transforms-2/files-2.1/917bc16a78ee940ed624bf51b87f2c29/AndroidManifest.xml:20:5-44

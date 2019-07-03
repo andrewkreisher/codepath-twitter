@@ -30,6 +30,32 @@
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivRetweet"
+        app:layout_constraintTop_toBottomOf="@+id/tvBody"
+        app:srcCompat="@drawable/ic_vector_heart" />
+
+
+    <ImageView
+        android:id="@+id/ivRetweet"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBody"
+        app:srcCompat="@drawable/ic_vector_retweet" />
+
     <TextView
         android:id="@+id/tvBody"
         android:layout_width="0dp"
@@ -47,12 +73,13 @@
         app:layout_constraintVertical_bias="0.111" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="0.2dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:background="#5C5B5B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
