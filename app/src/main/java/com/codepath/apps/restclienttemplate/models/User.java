@@ -11,6 +11,7 @@ public class User {
     public String screenName;
     public String profileImageUrl;
 
+
     //deserailize json
     public static User fromJSON(JSONObject jsonObject) throws JSONException{
         User user = new User();

@@ -1,6 +1,8 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +33,11 @@ public class TimelineActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //actionbar color
+        getSupportActionBar().setBackgroundDrawable(
+                new ColorDrawable(Color.parseColor("#1da1f2")));
+
         setContentView(R.layout.activity_timeline);
 
         client = RestApplication.getRestClient(this);
