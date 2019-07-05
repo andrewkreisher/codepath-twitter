@@ -40,7 +40,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivRetweet"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
+        app:layout_constraintTop_toBottomOf="@+id/ivMedia"
         app:srcCompat="@drawable/ic_vector_heart" />
 
 
@@ -48,12 +48,12 @@
         android:id="@+id/ivRetweet"
         android:layout_width="0dp"
         android:layout_height="20dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="104dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
+        app:layout_constraintTop_toBottomOf="@+id/ivMedia"
         app:srcCompat="@drawable/ic_vector_retweet" />
 
     <TextView
@@ -79,7 +79,8 @@
         android:layout_marginTop="4dp"
         android:background="#5C5B5B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/ivMedia"
+        app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
@@ -101,4 +102,16 @@
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/tvHandle"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBody"
+        app:srcCompat="@android:color/background_light" />
 </android.support.constraint.ConstraintLayout>

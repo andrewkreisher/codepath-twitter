@@ -86,6 +86,16 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
                 .load(tweet.user.profileImageUrl)
                 .apply(RequestOptions.circleCropTransform())
                 .into(viewHolder.ivProfileImage);
+
+
+        if (tweet.mediaUrl != null){
+            Glide.with(context)
+                    .load(tweet.mediaUrl)
+                    .into(viewHolder.ivMedia);
+        }
+        else {
+            ;
+        }
     }
 
     @Override
@@ -100,6 +110,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         public TextView tvBody;
         public TextView tvHandle;
         public TextView tvDate;
+        public ImageView ivMedia;
 
         public ViewHolder(View itemView){
             super(itemView);
@@ -109,6 +120,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvUsername = (TextView) itemView.findViewById(R.id.tvUsername);
             tvHandle = (TextView) itemView.findViewById(R.id.tvHandle);
             tvDate = (TextView) itemView.findViewById(R.id.tvDate);
+            ivMedia = (ImageView) itemView.findViewById(R.id.ivMedia);
         }
 
     }

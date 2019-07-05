@@ -1028,8 +1028,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable small
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable twitter_logo
 id ALT
 id CTRL
 id FUNCTION
@@ -1121,12 +1123,13 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
+id imageView2
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id ivLike
+id ivMedia
 id ivProfileImage
 id ivRetweet
 id labeled

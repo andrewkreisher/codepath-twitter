@@ -31,6 +31,9 @@ public class TimelineActivity extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeContainer;
     private FloatingActionButton fab;
+    private EndlessRecyclerViewScrollListener scrollListener;
+    long maxID = 0;
+
 
 
 
@@ -46,6 +49,8 @@ public class TimelineActivity extends AppCompatActivity {
         //actionbar color
         getSupportActionBar().setBackgroundDrawable(
                 new ColorDrawable(Color.parseColor("#1da1f2")));
+
+        getSupportActionBar().setTitle("@andrewkreisher");
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -89,10 +94,35 @@ public class TimelineActivity extends AppCompatActivity {
         //construct adapter from datasource
         tweetAdapter = new TweetAdapter(tweets);
         //recyclerview setup (layoutmanager, use adapter)
-        rvTweets.setLayoutManager(new LinearLayoutManager(this));
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        rvTweets.setLayoutManager(linearLayoutManager);
+
+
+        scrollListener = new EndlessRecyclerViewScrollListener(linearLayoutManager) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
+                // Triggered only when new data needs to be appended to the list
+                // Add whatever code is needed to append new items to the bottom of the list
+                loadNextDataFromApi(page);
+            }
+        };
+        // Adds the scroll listener to RecyclerView
+        rvTweets.addOnScrollListener(scrollListener);
         rvTweets.setAdapter(tweetAdapter);
 
 
+    }
+
+
+    public void loadNextDataFromApi(int offset) {
+        maxID = tweets.get(tweets.size()-1).uid;
+        populateTimeline(maxID);
+        // Send an API request to retrieve appropriate paginated data
+        //  --> Send the request including an offset value (i.e `page`) as a query parameter.
+        //  --> Deserialize and construct new model objects from the API response
+        //  --> Append the new data objects to the existing set of items inside the array of items
+        //  --> Notify the adapter of the new items made with `notifyItemRangeInserted()`
     }
 
 
@@ -101,7 +131,7 @@ public class TimelineActivity extends AppCompatActivity {
     public boolean onPrepareOptionsMenu(Menu menu) {
         // Store instance of the menu item containing progress
         miActionProgressItem = menu.findItem(R.id.miActionProgress);
-        populateTimeline();
+        populateTimeline(maxID);
         // Return to finish
         return super.onPrepareOptionsMenu(menu);
     }
@@ -128,14 +158,14 @@ public class TimelineActivity extends AppCompatActivity {
 //            populateTimeline();
 //            swipeContainer.setRefreshing(false);
 
-        client.getHomeTimeline(new JsonHttpResponseHandler() {
+        client.getHomeTimeline(maxID, new JsonHttpResponseHandler() {
             public void onSuccess(int i, Header[] header, JSONArray json) {
                 Log.i("Andrew2", "Success");
                         // Remember to CLEAR OUT old items before appending in the new ones
                 tweetAdapter.clear();
                         // ...the data has come back, add new items to your adapter...
                 //weetAdapter.addAll(tweets);
-                populateTimeline();
+                populateTimeline(maxID);
                         // Now we call setRefreshing(false) to signal refresh has finished
                 swipeContainer.setRefreshing(false);
             }
@@ -192,9 +222,9 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
 
-    private void populateTimeline(){
+    private void populateTimeline(long maxID){
         showProgressBar();
-        client.getHomeTimeline(new JsonHttpResponseHandler(){
+        client.getHomeTimeline(maxID, new JsonHttpResponseHandler(){
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
